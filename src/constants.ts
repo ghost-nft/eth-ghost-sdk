@@ -6,7 +6,7 @@ export type BigintIsh = JSBI | bigint | string
 export enum ChainId {
   MAINNET = 1,
   TESTNET = 3,
-  LOCALNET = 1337
+  LOCALNET = 1337,
 }
 
 export enum TradeType {
@@ -21,21 +21,21 @@ export enum Rounding {
 }
 
 export const CHAIN_FACTORY_ADDRESS = {
-  1: '',
-  3: '',
-  1337: '0x092b7E0E81C8AE9ac68E2A208Ebd7305B02c2806'
+  1:'',
+  3:'',
+  1337:'',
 }
 
 export const CHAIN_INIT_CODE_HASH = {
-  1: '',
-  3: '',
-  1337: '0x93157d21dcf193c0cc9ce464eb02dfe23f23997cc9895c26c9b9b4813076acc3'
+  1:'',
+  3:'',
+  1337:'',
 }
 
 export const CHAIN_WETH_ADDRESS = {
-  1: '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2',
-  3: '0xc778417E063141139Fce010982780140Aa0cD5Ab',
-  1337: '0xde64b1B936E11f7C9C645063A23916ED193bD80f'
+  1:'0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c',
+  3:'0xa7DDE2DbB0D5454e458383d4E8659a825ADc25e1',
+  1337:'0x3b80b837c5b2F2B804e9aD3bc86eB0f13126Cb17',
 }
 
 export const MINIMUM_LIQUIDITY = JSBI.BigInt(1000)
