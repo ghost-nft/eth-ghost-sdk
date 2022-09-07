@@ -70,24 +70,24 @@ export const WETH = {
     ChainId.MAINNET,
     CHAIN_WETH_ADDRESS[ChainId.MAINNET],
     18,
-    'WBNB',
-    'Wrapped BNB',
-    'https://www.binance.org'
+    'WETH',
+    'Wrapped ETH',
+    'https://ethereum.org'
   ),
   [ChainId.TESTNET]: new Token(
     ChainId.TESTNET,
     CHAIN_WETH_ADDRESS[ChainId.TESTNET],
     18,
-    'WBNB',
-    'Wrapped BNB',
-    'https://www.binance.org'
+    'WETH',
+    'Wrapped ETH',
+    'https://ethereum.org'
   ),
   [ChainId.LOCALNET]: new Token(
     ChainId.LOCALNET,
     CHAIN_WETH_ADDRESS[ChainId.LOCALNET],
     18,
-    'WBNB',
-    'Wrapped BNB',
-    'https://www.binance.org'
+    'WETH',
+    'Wrapped ETH',
+    'https://ethereum.org'
   )
 }
