@@ -1,7 +1,7 @@
 {
-  "name": "@ghost-nft/ghost-sdk",
+  "name": "@ghost-nft/eth-ghost-sdk",
   "license": "MIT",
-  "version": "1.0.30",
+  "version": "1.0.1",
   "description": "🛠 An SDK for building applications on top of Pancakeswap.",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -10,7 +10,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/ghost-nft/ghost-sdk.git"
+    "url": "https://github.com/ghost-nft/eth-ghost-sdk.git"
   },
   "keywords": [
     "ghost",
