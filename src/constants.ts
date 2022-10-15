@@ -23,13 +23,13 @@ export enum Rounding {
 export const CHAIN_FACTORY_ADDRESS = {
   1:'',
   3:'',
-  1337:'',
+  1337:'0xfC625665730bA54cB5eC88d7c4C25c23aCAAF8b5',
 }
 
 export const CHAIN_INIT_CODE_HASH = {
   1:'',
   3:'',
-  1337:'',
+  1337:'0xd4d55591d78ff9769bdce4585b5aa8e1db85b4f2f59b640ba76026ad9fd6c84c',
 }
 
 export const CHAIN_WETH_ADDRESS = {
