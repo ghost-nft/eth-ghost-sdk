@@ -89,5 +89,13 @@ export const WETH = {
     'WETH',
     'Wrapped ETH',
     'https://ethereum.org'
+  ),
+  [ChainId.GHOSTNET]: new Token(
+    ChainId.GHOSTNET,
+    CHAIN_WETH_ADDRESS[ChainId.GHOSTNET],
+    18,
+    'WETH',
+    'Wrapped ETH',
+    'https://ethereum.org'
   )
 }
