@@ -15,7 +15,7 @@ import {
   FIVE,
   FEES_NUMERATOR,
   FEES_DENOMINATOR,
-  ChainId,
+  ChainId
 } from '../constants'
 import { sqrt, parseBigintIsh } from '../utils'
 import { InsufficientReservesError, InsufficientInputAmountError } from '../errors'
@@ -29,6 +29,7 @@ export class Pair {
 
   public static getAddress(tokenA: Token, tokenB: Token): string {
     const tokens = tokenA.sortsBefore(tokenB) ? [tokenA, tokenB] : [tokenB, tokenA] // does safety checks
+    console.log('CHAIN_INIT_CODE_HASH[tokens[0].chainId]', CHAIN_INIT_CODE_HASH[tokens[0].chainId])
     if (PAIR_ADDRESS_CACHE?.[tokens[0].address]?.[tokens[1].address] === undefined) {
       PAIR_ADDRESS_CACHE = {
         ...PAIR_ADDRESS_CACHE,
@@ -38,8 +39,8 @@ export class Pair {
             CHAIN_FACTORY_ADDRESS[tokens[0].chainId],
             keccak256(['bytes'], [pack(['address', 'address'], [tokens[0].address, tokens[1].address])]),
             CHAIN_INIT_CODE_HASH[tokens[0].chainId]
-          ),
-        },
+          )
+        }
       }
     }
 
